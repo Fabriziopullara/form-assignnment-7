@@ -5,8 +5,8 @@ body {
 .screen {
   display: flex;
   flex-direction: column;
- position: relative;
- top: 20px;
+  position: relative;
+  top: 20px;
   margin: auto;
   align-items: center;
   max-width: fit-content;
@@ -47,46 +47,47 @@ body {
   align-items: center;
   justify-content: center;
 }
-button{
+button {
   background-color: rgba(138, 210, 96, 0.677);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   transform: scale(1.1);
   background-color: brown;
 }
 
-.boxes:hover{
-  background-color:rgba(192, 194, 196, 0.684)
+.boxes:hover {
+  background-color: rgba(192, 194, 196, 0.684);
 }
 
-.checkbox-container label{
+.checkbox-container label {
   cursor: pointer;
   display: flex;
 }
-.checkbox-container input{
+.checkbox-container input {
   cursor: pointer;
   opacity: 0;
-  position: absolute;}
+  position: absolute;
+}
 
-  .checkbox-container label::before {
-    content: "";
-    width: 1em;
-height: 1em;
-border: .05em solid black;  
-border-radius: .15em;
-margin-right: .5em;
-  }
+.checkbox-container label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 0.05em solid black;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+}
 
-  .checkbox-container label:hover::before{
-    background-color: lightgreen
-  }
+.checkbox-container label:hover::before {
+  background-color: lightgreen;
+}
 
-  .checkbox-container input:checked + label::before{
-    content: "\002714";
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.checkbox-container input:checked + label::before {
+  content: "\002714";
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
