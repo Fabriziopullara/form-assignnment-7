@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Form</title>
   </head>
 
   <body>
+    <img class="img-pasta" src="images/fresh-pasta.jpg" alt="fresh-pasta" />
     <main class="screen">
-      <img class="img-pasta" src="images/fresh-pasta.jpg" alt="fresh-pasta" />
-
       <h1 class="title">Contact form for personalized receipe!</h1>
 
       <form action="">
@@ -24,10 +26,24 @@
           <input type="email" />
         </div>
 
+        <div class="selector">
+          <label for="select" class="label">Choose your receipe</label>
+          <select name="receipe" id="">
+            <option value="pasta">Aglio e olio</option>
+            <option value="carne">Chicken alla cacciatora</option>
+            <option value="carne">Chicken alla cacciatora</option>
+            <option value="carne">Chicken alla cacciatora</option>
+          </select>
+        </div>
+
         <div class="text-submit">
-          <textarea name="Message" id="" cols="35" rows="10"></textarea>
+          <textarea name="Message" id="" cols="35" rows="10" placeholder="Type here..." ></textarea>
 
           <button type="submit">Submit</button>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" />
+          <p>Accept terms and conditions</p>
         </div>
       </form>
     </main>

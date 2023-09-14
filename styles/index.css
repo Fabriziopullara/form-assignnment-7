@@ -1,3 +1,7 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
@@ -6,6 +10,8 @@
   max-width: fit-content;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
+  background-color: rgba(165, 42, 42, 0.288);
+  padding: 10px;
 }
 
 .img-pasta {
@@ -19,11 +25,23 @@
 
 .name,
 .e-mail,
-.text-submit {
+.text-submit,
+.selector {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .label {
   background-color: orange;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.check-box {
+  display: flex;
+}
+button{
+  background-color: rgba(138, 210, 96, 0.677);
 }
